@@ -15,14 +15,14 @@ export default function Authenticated({
         useState(false);
 
     return (
-        <div className="min-h-screen bg-gray-100">
-            <nav className="border-b border-gray-100 bg-white">
+        <div className="min-h-screen bg-gradient-to-br from-family-50 to-family-100">
+            <nav className="border-b border-family-200 bg-gradient-to-r from-white to-family-50 shadow-sm">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex h-16 justify-between">
                         <div className="flex">
                             <div className="flex shrink-0 items-center">
                                 <Link href="/">
-                                    <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800" />
+                                    <ApplicationLogo className="block h-9 w-auto fill-current text-family-600" />
                                 </Link>
                             </div>
 
@@ -43,7 +43,7 @@ export default function Authenticated({
                                         <span className="inline-flex rounded-md">
                                             <button
                                                 type="button"
-                                                className="inline-flex items-center rounded-md border border-transparent bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:outline-none"
+                                                className="inline-flex items-center rounded-md border border-transparent bg-white px-3 py-2 text-sm font-medium leading-4 text-family-600 transition duration-150 ease-in-out hover:text-family-700 focus:outline-none focus:ring-2 focus:ring-family-500 focus:ring-offset-2"
                                             >
                                                 {user.name}
 
@@ -88,7 +88,7 @@ export default function Authenticated({
                                         (previousState) => !previousState,
                                     )
                                 }
-                                className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none"
+                                className="inline-flex items-center justify-center rounded-md p-2 text-family-400 transition duration-150 ease-in-out hover:bg-family-100 hover:text-family-500 focus:bg-family-100 focus:text-family-500 focus:outline-none"
                             >
                                 <svg
                                     className="h-6 w-6"
@@ -139,12 +139,12 @@ export default function Authenticated({
                         </ResponsiveNavLink>
                     </div>
 
-                    <div className="border-t border-gray-200 pb-1 pt-4">
+                    <div className="border-t border-family-200 pb-1 pt-4">
                         <div className="px-4">
-                            <div className="text-base font-medium text-gray-800">
+                            <div className="text-base font-medium text-family-800">
                                 {user.name}
                             </div>
-                            <div className="text-sm font-medium text-gray-500">
+                            <div className="text-sm font-medium text-family-500">
                                 {user.email}
                             </div>
                         </div>
@@ -166,7 +166,7 @@ export default function Authenticated({
             </nav>
 
             {header && (
-                <header className="bg-white shadow">
+                <header className="bg-gradient-to-r from-white to-family-50 shadow-sm border-b border-family-100">
                     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
                         {header}
                     </div>
